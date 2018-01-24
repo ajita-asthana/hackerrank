@@ -1,12 +1,19 @@
 #include<stdio.h>
 void main()
 {
-	int n,i,f=1;
+	int n,d,x,res=0;
 	printf("Enter a number\n");
 	scanf("%d",&n);
-	for(i=1;i<=n;i++)
+	x=n;
+	while(n!=0)
 	{
-		f=f*i
+		d=n%10;
+		res=res*10+d;
+		n /= 10;
 	}
-printf("Factorial is: %d",f);
+	if(x==n)
+		printf("Palindrome\n");
+	else
+		printf("Not Palindrome\n");
+
 }
