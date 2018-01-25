@@ -1,1 +1,1 @@
-# Hackerrank
+# Coding solutions to challenges
